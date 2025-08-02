@@ -1,5 +1,7 @@
 import Hero from '@/Comps/Hero'
 import Hero2 from '@/Comps/Hero2'
+import Hero3 from '@/Comps/Hero3'
+import Hero4 from '@/Comps/Hero4'
 import React from 'react'
 
 const HomePage = () => {
@@ -7,6 +9,8 @@ const HomePage = () => {
     <div>
       <Hero />
       <Hero2 />
+      <Hero3 />
+      <Hero4 />
     </div>
   )
 }
