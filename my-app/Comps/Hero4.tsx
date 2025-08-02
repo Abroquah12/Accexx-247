@@ -7,7 +7,7 @@ import bulb from "../public/images/bulb.svg";
 
 const Hero4 = () => {
   return (
-    <div className="flex justify-evenly w-300 relative bottom-40 left-2 z-10  mx-auto mt-10 overflow-hidden">
+    <div className="flex justify-evenly w-300 relative bottom-40 left-2 z-10  mx-auto mt-10 ">
       <div className=" bg-white w-60 h-60 rounded-2xl shadow-2xl flex flex-col items-center justify-center gap-5">
         <Image
           src={accountuser2}
