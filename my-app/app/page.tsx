@@ -5,6 +5,7 @@ import Hero4 from '@/Comps/Hero4'
 import Hero5 from '@/Comps/hero5'
 import Hero6 from '@/Comps/Hero6'
 import Hero7 from '@/Comps/Hero7'
+import Hero8 from '@/Comps/Hero8'
 import Why from '@/Comps/Why'
 import React from 'react'
 
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Why />
       <Hero6 />
       <Hero7 />
+      <Hero8 />
     </div>
   )
 }

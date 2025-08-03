@@ -6,9 +6,9 @@ import logo from "../public/Images/logo.webp"; // Adjust the path as necessary
 const Navbar = () => {
   return (
     <div>
-      <nav className="flex justify-between items-center p-8 bg-white-800 text-black bg-white h-18 border-b-gray-100 border-b-2 fixed top-0 left-0 right-0 z-50">
+      <nav className="flex justify-between items-center p-8 bg-white-800 text-gray-800 bg-white h-18 border-b-gray-100 border-b-2 fixed top-0 left-0 right-0 z-50">
         <div>
-          <Image src={logo} alt="Logo" height={500} width={500} className="h-20 w-21" />
+          <Image src={logo} alt="Logo" height={500} width={500} className="h-15 w-21 object-cover" />
         </div>
         <div className="flex items-center space-x-4 text-[13px] font-semibold">
           <Link href="/" className="text-black hover:text-gray-400 mx-2">
