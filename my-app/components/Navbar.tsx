@@ -8,7 +8,13 @@ const Navbar = () => {
     <div>
       <nav className="flex justify-between items-center p-8 bg-white-800 text-gray-800 bg-white h-18 border-b-gray-100 border-b-2 fixed top-0 left-0 right-0 z-50">
         <div>
-          <Image src={logo} alt="Logo" height={500} width={500} className="h-15 w-21 object-cover" />
+          <Image
+            src={logo}
+            alt="Logo"
+            height={500}
+            width={500}
+            className="h-15 w-21 object-cover"
+          />
         </div>
         <div className="flex items-center space-x-4 text-[13px] font-semibold">
           <Link href="/" className="text-black hover:text-gray-400 mx-2">
@@ -27,12 +33,22 @@ const Navbar = () => {
             FAQ
           </Link>
           <Link href="/" className="text-black hover:text-gray-400 mx-2">
-            Contact 
+            Contact
           </Link>
         </div>
         <div className="flex items-center justify-evenly space-x-4">
-            <button className="bg-[#9871FF] w-20 text-white py-1 rounded">Register</button>
-            <button className="border border-solid border-[#9871FF] w-20 py-1 rounded text-[#9871FF]">Login</button>
+          <Link
+            href="/register"
+            className="bg-[#9871FF] w-20 text-white py-1 rounded text-center"
+          >
+            Register
+          </Link>
+          <Link
+            href="/login"
+            className="border border-solid border-[#9871FF] w-20 py-1 rounded text-[#9871FF] text-center"
+          >
+            Login
+          </Link>
         </div>
       </nav>
     </div>
