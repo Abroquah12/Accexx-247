@@ -20,19 +20,19 @@ const Navbar = () => {
           <Link href="/" className="text-black hover:text-gray-400 mx-2">
             Home
           </Link>
-          <Link href="/" className="text-black hover:text-gray-400 mx-2">
+          <Link href="/services" className="text-black hover:text-gray-400 mx-2">
             Service
           </Link>
-          <Link href="/" className="text-black hover:text-gray-400 mx-2">
+          <Link href="/about" className="text-black hover:text-gray-400 mx-2">
             About Us
           </Link>
-          <Link href="/" className="text-black hover:text-gray-400 mx-2">
+          <Link href="/doctors" className="text-black hover:text-gray-400 mx-2">
             For Doctors
           </Link>
-          <Link href="/" className="text-black hover:text-gray-400 mx-2">
+          <Link href="/faq" className="text-black hover:text-gray-400 mx-2">
             FAQ
           </Link>
-          <Link href="/" className="text-black hover:text-gray-400 mx-2">
+          <Link href="/contact" className="text-black hover:text-gray-400 mx-2">
             Contact
           </Link>
         </div>

@@ -1,31 +1,37 @@
-import React from 'react'
+'use client'
+
+import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import premium_photo from '../public/images/premium_photo.webp'
-import premium_photo1 from '../public/images/premium_photo1.webp'
-import premium_photo5 from '../public/images/premium_photo5.webp'
-import photo3 from '../public/images/photo3.webp'
-import photo4 from '../public/images/photo4.webp'
-import photo5 from '../public/images/photo5.webp'
-import photo6 from '../public/images/photo6.webp'
-import photo7 from '../public/images/photo7.webp'
-import photo8 from '../public/images/photo8.webp'
-import photo9 from '../public/images/photo9.webp'
-import photo10 from '../public/images/photo10.webp'
-import tick from '../public/images/tick.svg'
-import locationpin from '../public/images/locationpin.svg'
-import accountuser from '../public/images/accountuser.svg'
-import caluser from '../public/images/caluser.svg'
-import sbtn from '../public/images/sbtn.svg'
-import accountuser2 from '../public/images/accountuser2.svg'
-import caluser2 from '../public/images/caluser2.svg'
-import locationpin2 from '../public/images/locationpin2.svg'
-import bulb from '../public/images/bulb.svg'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import premium_photo from '../public/Images/premium_photo.webp'
+import premium_photo1 from '../public/Images/premium_photo1.webp'
+import premium_photo5 from '../public/Images/premium_photo5.webp'
+import photo3 from '../public/Images/photo3.webp'
+import photo4 from '../public/Images/photo4.webp'
+import photo5 from '../public/Images/photo5.webp'
+import photo6 from '../public/Images/photo6.webp'
+import photo7 from '../public/Images/photo7.webp'
+import photo8 from '../public/Images/photo8.webp'
+import photo9 from '../public/Images/photo9.webp'
+import photo10 from '../public/Images/photo10.webp'
+import tick from '../public/Images/tick.svg'
+import locationpin from '../public/Images/locationpin.svg'
+import accountuser from '../public/Images/accountuser.svg'
+import caluser from '../public/Images/caluser.svg'
+import sbtn from '../public/Images/sbtn.svg'
+import accountuser2 from '../public/Images/accountuser2.svg'
+import caluser2 from '../public/Images/caluser2.svg'
+import locationpin2 from '../public/Images/locationpin2.svg'
+import bulb from '../public/Images/bulb.svg'
+
+gsap.registerPlugin(ScrollTrigger)
 
 /* ------------------------------ Hero ------------------------------ */
 const Hero = () => {
   return (
-    <div className='flex md:flex-row flex-col items-center h-[60vh] justify-evenly space-y-8 mt-15'>
+    <div data-gsap-reveal className='flex md:flex-row flex-col items-center h-[60vh] justify-evenly space-y-8 mt-15'>
       <div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-medium lg:leading-[70px] sm:leading-loose text-[#1a1a1a]">
           Find your doctor and <br />make an appointment
@@ -48,7 +54,7 @@ const Hero = () => {
 /* ------------------------------ Hero2 (search bar) ------------------------------ */
 const Hero2 = () => {
   return (
-    <div className='bg-white rounded-2xl shadow-2xl p-5 flex flex-col space-y-6 relative bottom-20 right-20 z-10 w-[1050px] h-[160px] mx-auto mt-10 overflow-hidden'>
+    <div data-gsap-reveal className='bg-white rounded-2xl shadow-2xl p-5 flex flex-col space-y-6 relative bottom-20 right-20 z-10 w-[1050px] h-[160px] mx-auto mt-10 overflow-hidden'>
       <h1 className="text-1xl font-bold text-purple-600"><u>General</u></h1>
       <div className='flex gap-4'>
         <div className='flex border border-gray-200 w-65 h-[58px] px-6 py-2 rounded-2xl overflow-hidden'>
@@ -86,7 +92,7 @@ const Hero2 = () => {
 /* ------------------------------ Hero3 (banner) ------------------------------ */
 const Hero3 = () => {
   return (
-    <div className='container mx-auto mt-10 p-5 text-white bg-[#9871FF] rounded-2xl shadow-lg w-[1200px] h-[290px] overflow-hidden'>
+    <div data-gsap-reveal className='container mx-auto mt-10 p-5 text-white bg-[#9871FF] rounded-2xl shadow-lg w-[1200px] h-[290px] overflow-hidden'>
       <div className='flex justify-evenly items-center mt-10'>
         <h1 className='font-bold text-2xl'>Easy Steps To Get Your <br />Solution</h1>
         <p>Easily make an appointment with our best doctor for your <br />families in the same day or next day</p>
@@ -99,7 +105,7 @@ const Hero3 = () => {
 /* ------------------------------ Hero4 (steps) ------------------------------ */
 const Hero4 = () => {
   return (
-    <div className="flex justify-evenly w-300 relative bottom-40 left-2 z-10 mx-auto mt-10">
+    <div data-gsap-reveal className="flex justify-evenly w-300 relative bottom-40 left-2 z-10 mx-auto mt-10">
       <div className="bg-white w-60 h-60 rounded-2xl shadow-2xl flex flex-col items-center justify-center gap-5">
         <Image src={accountuser2} alt="Search Doctor" width={30} height={30} className="inline-block mr-2" />
         <h1 className="font-bold">Search Doctor</h1>
@@ -145,7 +151,7 @@ const Hero4 = () => {
 /* ------------------------------ Hero5 (services) ------------------------------ */
 const Hero5 = () => {
   return (
-    <div className='container text-black max-w-7xl p-5'>
+    <div data-gsap-reveal className='container text-black max-w-7xl p-5'>
       <div className='flex justify-between items-center'>
         <h1 className='font-bold text-3xl ml-30'>We Will Serve You With <br />Healthcare Services</h1>
         <div className='flex flex-col'>
@@ -179,7 +185,7 @@ const Hero5 = () => {
 /* ------------------------------ Why ------------------------------ */
 const Why = () => {
   return (
-    <div>
+    <div data-gsap-reveal>
       <div className='flex flex-col gap-4 ml-20 mt-150'>
         <h1 className='text-[#9871FF]'>WHY CHOOSE US</h1>
         <p className='text-5xl font-bold'>We provide the health services <br />for patients. You can consult with our</p>
@@ -233,7 +239,7 @@ const topics = [
 const Hero6 = () => {
   const rows = [topics.slice(0, 2), topics.slice(2, 4)]
   return (
-    <div className="bg-[#9871FF] flex flex-col justify-center items-center mt-10 py-12 px-24">
+    <div data-gsap-reveal className="bg-[#9871FF] flex flex-col justify-center items-center mt-10 py-12 px-24">
       <h1 className="text-white text-3xl md:text-4xl font-bold mt-10">
         Find providers who can <br />
         help with these topics
@@ -282,7 +288,7 @@ const CheckItem = ({ label }: { label: string }) => (
 
 const Hero7 = () => {
   return (
-    <div className='flex flex-col justify-center items-center mt-10'>
+    <div data-gsap-reveal className='flex flex-col justify-center items-center mt-10'>
       <h1 className='text-4xl font-bold'>Create natural life after treat <br />from mental health medicare</h1>
       <p className='text-gray-600'>Medicare patient care is paramount - the driving force in everything we do. LifeStance is committed</p>
       <p className='text-gray-600'>to state-of-the-art clinical excellence</p>
@@ -326,7 +332,7 @@ const Hero7 = () => {
 /* ------------------------------ Hero8 (newsletter) ------------------------------ */
 const Hero8 = () => {
   return (
-    <div className='mt-20 ml-20 flex justify-between items-center p-6'>
+    <div data-gsap-reveal className='mt-20 ml-20 flex justify-between items-center p-6'>
       <div className='bg-white w-[1150px] h-120 shadow-2xl rounded-2xl flex justify-center items-center gap-14'>
         <div>
           <Image src={photo10} alt='a picture' width={500} height={500} className='h-100 rounded-2xl object-cover' />
@@ -354,8 +360,38 @@ const Hero8 = () => {
 
 /* ------------------------------ Home ------------------------------ */
 const Home = () => {
+  const homeRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const home = homeRef.current
+    if (!home) return
+
+    const media = gsap.matchMedia()
+    media.add('(prefers-reduced-motion: no-preference)', () => {
+      home.querySelectorAll<HTMLElement>('[data-gsap-reveal]').forEach((section) => {
+        gsap.fromTo(
+          section,
+          { autoAlpha: 0, y: 28 },
+          {
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.75,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: section,
+              start: 'top 88%',
+              once: true,
+            },
+          },
+        )
+      })
+    })
+
+    return () => media.revert()
+  }, [])
+
   return (
-    <main>
+    <main ref={homeRef}>
       <Hero />
       <Hero2 />
       <Hero3 />
