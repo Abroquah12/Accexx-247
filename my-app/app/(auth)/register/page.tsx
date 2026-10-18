@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import photo4 from '../../../public/images/photo4.webp'
+import photo4 from '../../../public/Images/photo4.webp'
 
 type Role = 'patient' | 'doctor'
 

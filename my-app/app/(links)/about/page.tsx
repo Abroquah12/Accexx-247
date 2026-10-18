@@ -5,9 +5,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import photo4 from '../../../public/images/photo4.webp'
-import photo9 from '../../../public/images/photo9.webp'
-import tick from '../../../public/images/tick.svg'
+import photo4 from '../../../public/Images/photo4.webp'
+import photo9 from '../../../public/Images/photo9.webp'
+import tick from '../../../public/Images/tick.svg'
 
 gsap.registerPlugin(ScrollTrigger)
 

@@ -4,9 +4,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import locationpin2 from '../../../public/images/locationpin2.svg'
-import accountuser2 from '../../../public/images/accountuser2.svg'
-import caluser2 from '../../../public/images/caluser2.svg'
+import locationpin2 from '../../../public/Images/locationpin2.svg'
+import accountuser2 from '../../../public/Images/accountuser2.svg'
+import caluser2 from '../../../public/Images/caluser2.svg'
 
 gsap.registerPlugin(ScrollTrigger)
 

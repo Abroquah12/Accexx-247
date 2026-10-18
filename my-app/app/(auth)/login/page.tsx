@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import premium_photo from '../../../public/images/premium_photo.webp'
+import premium_photo from '../../../public/Images/premium_photo.webp'
 
 const LoginPage = () => {
   const [email, setEmail] = useState('')
